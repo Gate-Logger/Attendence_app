@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "924074085335",
+    "firebase_url": "https://attendence-9c299.firebaseio.com",
+    "project_id": "attendence-9c299",
+    "storage_bucket": "attendence-9c299.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924074085335:android:afd4469856d55ca6",
+        "android_client_info": {
+          "package_name": "com.gate_logger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924074085335-5sdushlu8so1k22q030p29re83jthibo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gate_logger",
+            "certificate_hash": "76fd9bfe8dc8ec60bf7dc1d98e29839d659d4b46"
+          }
+        },
+        {
+          "client_id": "924074085335-r0qt7pu86ba360or76ga7mg3hcs3eirv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP4H-TSZiE5GXOOMM4TLLFfryg5Ld01G4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924074085335-r0qt7pu86ba360or76ga7mg3hcs3eirv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
