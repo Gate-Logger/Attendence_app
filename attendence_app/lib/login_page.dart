@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:attendence_app/auth_provider.dart';
 
@@ -11,9 +9,10 @@ class EmailFieldValidator {
     RegExp regex = new RegExp(pattern);
     if (value.isEmpty) {
       return 'Email can\'t be empty';
-    } else if (!regex.hasMatch(value)) {
-      return 'Enter Valid Email';
-    }
+    } 
+  // else if (!regex.hasMatch(value)) {
+  //     return 'Enter Valid Email';
+  //   }  
     return null;
   }
 }
@@ -65,9 +64,10 @@ class _LoginPageState extends State<LoginPage> {
         if (_formType == FormType.login) {
           String userId =
               await auth.signInWithEmailAndPassword(_email, _password);
+              print('userId !!!!!!!!${userId}');
         } else {
           String userId = await auth
-              .createUserWithEmailAndPassword(_email, _password);
+              .createUserWithEmailAndPassword(_email, _password); 
           print('Registered user: $userId');
         }
         widget.onSignedIn();

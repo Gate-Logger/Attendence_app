@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:attendence_app/home_page.dart';
 import 'package:attendence_app/login_page.dart';
+import 'package:attendence_app/employee-panel/index.dart';
 import 'package:attendence_app/auth_provider.dart';
 
 class RootPage extends StatefulWidget {
@@ -52,9 +52,10 @@ class _RootPageState extends State<RootPage> {
           onSignedIn: _signedIn,
         );
       case AuthStatus.signedIn:
-        return HomePage(
-          onSignedOut: _signedOut,
-        );
+      return EmployeePanel();
+        // return HomePage(
+        //   onSignedOut: _signedOut,
+        // );
     }
     return null;
   }
