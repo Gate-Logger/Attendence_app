@@ -1,4 +1,6 @@
+import 'package:attendence_app/employee-panel/employee-info.dart';
 import 'package:attendence_app/employee-panel/register.dart';
+import 'package:attendence_app/model/employee.dart';
 import 'package:flutter/material.dart';
 
 class EmployeePanel extends StatefulWidget{
@@ -11,7 +13,10 @@ class _EmployeePanelState extends State<EmployeePanel> {
   
 
 _openRegisterScreen() {
-  Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Register()));
+  Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Register(Employee(null, null, '', '', ''))));
+}
+_openEmployeeInfoScreen() {
+  Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new EmployeeInfo()));
 }
   @override
   Widget build(BuildContext context) {
@@ -49,7 +54,7 @@ _openRegisterScreen() {
                child: new Text('Delete'),
              ),
              RaisedButton(
-               onPressed: (){},
+               onPressed: _openEmployeeInfoScreen,
                child: new Text('Fetch'),
              ),
                ],
